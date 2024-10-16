@@ -38,3 +38,4 @@ if __name__ == '__main__':
     print(generate_random_string(n, use_uppercase=True))
     print(generate_random_string(n, use_uppercase=True, use_digits=True))
     print(generate_random_string(n, use_uppercase=True, use_digits=True, use_punctuation=True))
+    print(generate_random_string(n, use_uppercase=True, use_digits=True, use_punctuation=True, allow_duplicates=True))
