@@ -4,21 +4,19 @@
 # то генерируем строку только из строчных букв.
 
 import random
-from string import ascii_lowercase, ascii_uppercase, digits, punctuation
+from string import ascii_lowercase, ascii_uppercase
 
 
-def generate_string(n, use_uppercase=False):
-    lowercase_letters = 'abcdefghijklmnopqrstuvwxyz'
-    uppercase_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+def generate_random_string(n, use_uppercase=False) -> str:
+    letters: str = ascii_lowercase
 
-    letters = lowercase_letters
     if use_uppercase:
-        letters += uppercase_letters
+        letters += ascii_uppercase
 
         return ''.join(random.choice(letters) for _ in range(n))
 
 
 if __name__ == '__main__':
     n = 15
-    result = generate_string(n, use_uppercase=True)
+    result = generate_random_string(n, use_uppercase=True)
     print(result)
