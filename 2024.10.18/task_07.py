@@ -3,8 +3,14 @@
 
 import requests
 
-url = 'https://date.nager.at/api/v3/AvailableCountries'
-payload = {'countryCode': '', 'name': ''}
-res = requests.get(url, params=payload)
-country = res.json()
-print(country)
+
+
+
+if __name__ == '__main__':
+    url = 'https://date.nager.at/api/v3/AvailableCountries'
+
+    res = requests.get(url).json()
+
+    for country in res:
+        if country['name'] == 'Russia':
+            print(f"Страна Россия, код {country['countryCode']} ")
