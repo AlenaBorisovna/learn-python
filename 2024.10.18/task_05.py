@@ -5,15 +5,6 @@
 import requests
 
 
-def get_quote(lang):
-    url = 'http://api.forismatic.com/api/1.0/'
-    payload = {'method': 'getQuote', 'format': 'json', 'lang': lang}
-
-    res = requests.get(url, params=payload)
-    res.raise_for_status()
-    data = res.json()
-
-
 def get_lang():
     lang = {0: 'ru', 1: 'en'}
     choice = int(input("На каком языке вы хотите цитату?\n0 - Русский | 1 - Английский: "))
