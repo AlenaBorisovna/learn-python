@@ -1,0 +1,12 @@
+
+оператор SELECT это запрос определнных операторв
+состоит из 4 операторов:
+SELECT - выбери
+* - все колонки
+from - из
+employees - таблицы с именем employees
+
+пример:
+select name
+from employees
+limit 5;
