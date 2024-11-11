@@ -16,6 +16,6 @@ limit 5;
 SELECT city
 FROM employees;
 
-# выводит 2 запроса
+# выводит без повторений
 SELECT DISTINCT city
 FROM employees;
