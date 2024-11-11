@@ -19,3 +19,8 @@ FROM employees;
 # выводит без повторений
 SELECT DISTINCT city
 FROM employees;
+
+# выводит только тех людей, где есть city - London
+SELECT *
+FROM employees
+WHERE city = 'London';
