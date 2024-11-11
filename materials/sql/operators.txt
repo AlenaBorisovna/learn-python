@@ -10,3 +10,12 @@ employees - таблицы с именем employees
 select name
 from employees
 limit 5;
+
+
+# выводит 10 запросов
+SELECT city
+FROM employees;
+
+# выводит 2 запроса
+SELECT DISTINCT city
+FROM employees;
