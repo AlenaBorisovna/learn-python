@@ -21,6 +21,7 @@ SELECT DISTINCT city
 FROM employees;
 
 # выводит только тех людей, где есть city - London
+# при запросе не стоит указывать ""
 SELECT *
 FROM employees
 WHERE city = 'London';
