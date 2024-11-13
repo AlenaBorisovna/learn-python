@@ -29,3 +29,13 @@ WHERE city = 'London';
 Оператор ORDER BY применяется для сортировки данных по одной или нескольким колонкам.
 Оператор DESC - сортировка по убыванию.
 ASC - сортировка по возрастанию
+Для объединения условий используйте оператор AND.
+
+CREATE TABLE tbl2 (
+    f1 varchar(30) primary key,
+    f2 text,
+    f3 real);
+
+
+create table tbl1(one text, two int);
+insert into tbl1 values('hello!',10);
